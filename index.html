@@ -1,105 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RZ Tire Garage LLC - Reviews</title>
+    <title>RZ Tire Garage LLC | Arvada's Best Local Tire Shop</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; }
+    </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-slate-50 text-slate-900">
 
-    <section class="py-16 px-4 max-w-7xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
-            <div class="flex justify-center items-center gap-2 mb-2">
-                <span class="text-2xl font-bold text-gray-800">4.4</span>
-                <div class="flex text-yellow-400">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <span class="text-gray-600">(203 Google Reviews)</span>
-            </div>
-            <p class="text-gray-600 max-w-2xl mx-auto">Real feedback from our Arvada neighbors. Fast, local, and honest tire service.</p>
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <i class="fas fa-tire text-red-600 text-3xl"></i>
+            <span class="text-xl font-black tracking-tighter text-slate-800 uppercase italic">RZ Tire <span class="text-red-600">Garage</span></span>
         </div>
+        <div class="hidden md:flex gap-8 font-semibold text-slate-600 uppercase text-sm tracking-widest">
+            <a href="#services" class="hover:text-red-600">Services</a>
+            <a href="#reviews" class="hover:text-red-600">Reviews</a>
+            <a href="#location" class="hover:text-red-600">Location</a>
+        </div>
+        <a href="tel:3034311042" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-md font-bold transition-all flex items-center gap-2">
+            <i class="fas fa-phone-alt"></i> (303) 431-1042
+        </a>
+    </nav>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-                <div>
-                    <div class="flex text-yellow-400 mb-4 text-sm">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 italic mb-6">"Fast, efficient, like a pit crew! They got me back on the road in under 20 minutes. My favorite tire shop!"</p>
-                </div>
-                <div class="flex items-center gap-3 border-t pt-4">
-                    <div class="bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center text-white font-bold text-sm">TW</div>
-                    <div>
-                        <p class="font-bold text-gray-900 text-sm">Terry Wilkinson</p>
-                        <p class="text-xs text-gray-500">Verified Customer</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-                <div>
-                    <div class="flex text-yellow-400 mb-4 text-sm">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 italic mb-6">"I've been coming here for several years. Always honest and straightforward. They work hard to get us taken care of quickly."</p>
-                </div>
-                <div class="flex items-center gap-3 border-t pt-4">
-                    <div class="bg-red-600 h-10 w-10 rounded-full flex items-center justify-center text-white font-bold text-sm">CC</div>
-                    <div>
-                        <p class="font-bold text-gray-900 text-sm">Carlos Cady-Reheis</p>
-                        <p class="text-xs text-gray-500">Long-time Customer</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
-                <div>
-                    <div class="flex text-yellow-400 mb-4 text-sm">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 italic mb-6">"The prices they give are noticeably cheaper than bigger corporate shops like Discount Tire or Les Schwab. Love the first-come, first-serve approach."</p>
-                </div>
-                <div class="flex items-center gap-3 border-t pt-4">
-                    <div class="bg-green-600 h-10 w-10 rounded-full flex items-center justify-center text-white font-bold text-sm">CV</div>
-                    <div>
-                        <p class="font-bold text-gray-900 text-sm">Colin VanKeulen</p>
-                        <p class="text-xs text-gray-500">Verified Customer</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between lg:hidden xl:flex">
-                <div>
-                    <div class="flex text-yellow-400 mb-4 text-sm">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 italic mb-6">"Woke up to a flat before work. They got me back on the road in under 30 minutes for a great price. First class work!"</p>
-                </div>
-                <div class="flex items-center gap-3 border-t pt-4">
-                    <div class="bg-purple-600 h-10 w-10 rounded-full flex items-center justify-center text-white font-bold text-sm">MS</div>
-                    <div>
-                        <p class="font-bold text-gray-900 text-sm">Mark Stabrawa Sr.</p>
-                        <p class="text-xs text-gray-500">Local Guide</p>
-                    </div>
-                </div>
+    <header class="hero-gradient h-[70vh] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-black uppercase mb-6 leading-tight tracking-tight">Fast. Local. <span class="text-red-500">Affordable.</span></h1>
+            <p class="text-lg md:text-2xl mb-10 text-slate-200">Arvada's favorite family-owned tire shop. Skip the corporate lines—most services completed in under 20 minutes.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="tel:3034311042" class="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-lg font-bold text-xl uppercase tracking-wider transition-all">Get a Quote</a>
+                <a href="#location" class="bg-white hover:bg-slate-100 text-slate-900 px-10 py-4 rounded-lg font-bold text-xl uppercase tracking-wider transition-all">Visit Our Shop</a>
             </div>
         </div>
+    </header>
 
-        <div class="mt-12 text-center">
-            <p class="text-gray-600 mb-6 font-medium italic">"Better than the corporate chains – Local Arvada Pride!"</p>
-            <a href="tel:+13034311042" class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg">
-                <i class="fas fa-phone-alt"></i> Call (303) 431-1042
-            </a>
+    <div class="bg-white border-b py-8">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-around items-center gap-8 text-center">
+            <div>
+                <div class="text-3xl font-black text-slate-800">4.4 / 5.0</div>
+                <div class="text-yellow-400 my-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <p class="text-sm font-bold text-slate-500 uppercase tracking-widest">203+ Google Reviews</p>
+            </div>
+            <div class="h-12 w-px bg-slate-200 hidden md:block"></div>
+            <div>
+                <div class="text-3xl font-black text-slate-800">20 MINS</div>
+                <p class="text-sm font-bold text-slate-500 uppercase tracking-widest mt-2 leading-none">Average Service Time</p>
+            </div>
+            <div class="h-12 w-px bg-slate-200 hidden md:block"></div>
+            <div>
+                <div class="text-3xl font-black text-slate-800 italic uppercase">Arvada, CO</div>
+                <p class="text-sm font-bold text-slate-500 uppercase tracking-widest mt-2 leading-none">Family Owned Since 2012</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="services" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-black uppercase text-slate-900 italic tracking-tight">Expert Tire <span class="text-red-600">Services</span></h2>
+            <div class="h-1.5 w-24 bg-red-600 mx-auto mt-4"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border-b-4 border-red-600">
+                <i class="fas fa-tools text-4xl text-red-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-3 uppercase tracking-tighter">Mount & Balance</h3>
+                <p class="text-slate-600">Quick and precise balancing for a smooth ride. We handle everything from standard to custom wheels.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border-b-4 border-red-600">
+                <i class="fas fa-truck-monster text-4xl text-red-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-3 uppercase tracking-tighter">Used & New Tires</h3>
+                <p class="text-slate-600">The best prices on both used and brand new tires. High-quality tread for any budget.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border-b-4 border-red-600">
+                <i class="fas fa-shield-alt text-4xl text-red-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-3 uppercase tracking-tighter">Flat Repairs</h3>
+                <p class="text-slate-600">Nail in your tire? We offer prompt patches and repairs to get you back on the road in minutes.</p>
+            </div>
         </div>
     </section>
+
+    <section id="reviews" class="bg-slate-900 py-24 px-4 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/3">
+                    <h2 class="text-4xl font-black uppercase italic mb-6">Why Neighbors <span class="text-red-500">Choose Us</span></h2>
+                    <p class="text-slate-400 mb-8 italic">"Noticeably cheaper than corporate shops like Discount Tire or Les Schwab."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="w-10" alt="Google">
+                        <span class="font-bold text-xl uppercase tracking-tighter">Verified Reviews</span>
+                    </div>
+                </div>
+                <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-800 p-8 rounded-lg relative">
+                        <i class="fas fa-quote-left text-slate-700 text-5xl absolute top-4 left-4"></i>
+                        <p class="relative z-10 italic text-slate-300 mb-4">"My favorite tire shop!! Fast and efficient, like a pit crew!"</p>
+                        <p class="font-bold text-red-500 uppercase text-sm">— Terry Wilkinson</p>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-lg relative">
+                        <i class="fas fa-quote-left text-slate-700 text-5xl absolute top-4 left-4"></i>
+                        <p class="relative z-10 italic text-slate-300 mb-4">"Cheaper than bigger corporate shops... I love that you can show up without an appointment."</p>
+                        <p class="font-bold text-red-500 uppercase text-sm">— Colin VanKeulen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="py-24 px-4 max-w-7xl mx-auto">
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+            <div class="md:w-1/2 p-12 bg-slate-50">
+                <h2 class="text-3xl font-black uppercase italic mb-8">Visit the Garage</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <i class="fas fa-map-marker-alt text-red-600 text-xl"></i>
+                        <p class="font-bold text-slate-700">5790 Ward Rd, Arvada, CO 80002</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-clock text-red-600 text-xl"></i>
+                        <div>
+                            <p class="font-bold text-slate-700 uppercase leading-none mb-1">Business Hours</p>
+                            <p class="text-slate-500 italic uppercase text-sm tracking-widest">Mon - Sat: 8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 pt-4">
+                        <a href="https://www.facebook.com/" class="text-slate-400 hover:text-red-600 text-2xl transition-all"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-red-600 text-2xl transition-all"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 min-h-[400px]">
+                <iframe 
+                    class="w-full h-full grayscale hover:grayscale-0 transition-all border-none"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d3066.082715694273!2d-105.1226768!3d39.8017043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b8889417d4543%3A0xe4d830b91e779a94!2s5790%20Ward%20Rd%2C%20Arvada%2C%20CO%2080002!5e0!3m2!1sen!2sus!4v1711467200000!5m2!1sen!2sus" 
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 border-t">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-slate-500 text-sm">&copy; 2026 RZ Tire Garage LLC. All rights reserved.</p>
+            <div class="flex gap-4 text-slate-400 text-xs uppercase tracking-widest font-bold">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
